@@ -8,4 +8,14 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    optimizeDeps: {
+        esbuildOptions: {
+            loader: {
+                ".js": "jsx"
+            },
+        }
+    },
+    esbuild: {
+        loader: "jsx"
+    }
 });
